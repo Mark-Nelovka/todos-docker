@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  frontend:
+    image: todos-front
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+  backend:
+    image: todos-nest
+    ports:
+      - "8080:8080"
+    environment:
+      - POSTGRES_HOST=ep-spring-darkness-85486419-pooler.eu-central-1.postgres.vercel-storage.com
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=default
+      - POSTGRES_PASSWORD=mwF7I6ByCQpz
+      - POSTGRES_DATABASE=verceldb
+    command: ["npm", "start"]
