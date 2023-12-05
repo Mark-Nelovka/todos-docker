@@ -24,3 +24,6 @@ Run command:
 
 You can see frontend in port 3000
 
+Frontend repository: https://github.com/Mark-Nelovka/todos-front
+Backend repository: https://github.com/Mark-Nelovka/todos-nest
+Docker (repository name): marknelovka
